@@ -1,0 +1,20 @@
+{
+  "name": "todos",
+  "version": "0.0.1",
+  "scripts": {
+    "prestart-webdriver": "webdriver-manager update",
+    "start-webdriver": "webdriver-manager start",
+    "e2e": "protractor protractor.config.js",
+    "e2e+ve": "protractor protractor.config.js -- --tag=@positive",
+    "e2e-ve": "protractor protractor.config.js -- --tag=@negative"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "7.3.0",
+    "chai": "4.3.4",
+    "cucumber-html-reporter": "5.4.0",
+    "fs-extra": "^10.0.0",
+    "protractor": "7.0.0",
+    "protractor-cucumber-framework": "8.2.1",
+    "yargs": "17.0.1"
+  }
+}
